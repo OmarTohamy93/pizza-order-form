@@ -72,4 +72,14 @@ input[type="submit"],
 input[type="reset"]{
     display: block;
     margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.pizzas-number select:hover,
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    cursor: pointer;
+    background-color: var(--color1);
 }
