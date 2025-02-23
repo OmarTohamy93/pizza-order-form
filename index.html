@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> Web design book excercises </title>
+</head>
+
+<body>
+    <main>
+        <h1>Black Goose Bistro | Pizza-on-Demand
+        </h1>
+        <p>our12 wood-fired pizza are available for delivery.<br>
+            Build your custom pizza and we'll deliver it within an hour
+        </p>
+        <form class="customer-info-form" action="http://blackgoosebistro.com/pizza.php" method="post">
+
+            <fieldset class="information-section">
+                <legend>Your Information</legend>
+                <label for="#customername">Name:</label><input autofocus autocomplete="additional-name" required
+                    type="text" name="customername" id="customername">
+                <label for="#address">Address:</label><input required type="address" name="address" id="address">
+                <label for="#telephone">Telephone Number:</label><input required type="telephone" name="telephone"
+                    id="telephone">
+                <label for="#email">Email:</label><input required type="email" name="email" id="email">
+                <label for="#instructions">Delivery instructions:</label><textarea rows="4" cols="60" maxlength="400"
+                    placeholder="please insert your Delivery instructions here...." name="instructions"
+                    id="instructions"></textarea>
+
+            </fieldset>
+
+            <h2>Design Your Dream Pizza</h2>
+
+            <fieldset>
+                <legend>Pizza specs</legend>
+
+                <fieldset class="pizza-specs">
+                    <legend>Crust(Choose one)</legend>
+                    <label for="#crust"><input required type="radio" id="crust" name="crust"
+                            value="Classic white">Classic
+                        white</label>
+                    <label for="#crust"><input required type="radio" id="crust" name="crust"
+                            value="Multigrain">Multigrain</label>
+                    <label for="#crust"><input required type="radio" id="crust" name="crust"
+                            value="Cheese-stuffed crust">Cheese-stuffed crust</label>
+                    <label for="#crust"><input required type="radio" id="crust" name="crust" value="Gluten free">Gluten
+                        free</label>
+                </fieldset>
+
+                <fieldset class="toopings-crust">
+                    <legend>
+                        Toppings(Choose as many as you want):
+                    </legend>
+                    <label for="#toppings[]"><input type="checkbox" id="toppings[]" name="toppings[]"
+                            value="Red sauce">Red
+                        sauce</label>
+                    <label for="#toppings[]"><input type="checkbox" id="toppings[]" name="toppings[]"
+                            value="White sauce">White sauce</label>
+                    <label for="#toppings[]"> <input type="checkbox" id="toppings[]" name="toppings[]"
+                            value="Mozzarella">Mozzarella
+                        Cheese</label>
+                    <label for="#toppings[]"><input type="checkbox" id="toppings[]" name="toppings[]"
+                            value="Pepperoni">Pepperoni</label>
+                    <label for="#toppings[]"><input type="checkbox" id="toppings[]" name="toppings[]"
+                            value="Mushrooms">Mushrooms</label>
+                    <label for="#toppings[]"><input type="checkbox" id="toppings[]" name="toppings[]"
+                            value="Peppers">Peppers</label>
+                    <label for="#toppings[]"><input type="checkbox" id="toppings[]" name="toppings[]"
+                            value="Anchovies">Anchovies</label>
+                </fieldset>
+
+                <fieldset class="pizzas-number">
+                    <legend>Number</legend>
+                    <p>How many pizzas?</p>
+                    <select name="pizzas" id="pizzas" size="1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </fieldset>
+            </fieldset>
+            <input type="submit" value="Bring me a pizza!">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+</body>
+
+</html>

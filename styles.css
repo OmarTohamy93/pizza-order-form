@@ -1,0 +1,75 @@
+:root {
+    --color1: #A89C29;
+    --color2: #F9CB43;
+    --color3: #FBA518;
+    --color4: #E52020;
+}
+
+body {
+    background-color: var(--color4);
+}
+
+h1,
+h2,
+p,
+legend {
+    text-align: center;
+    color: var(--color4);
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+main {
+    width: 65%;
+    margin: 100px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color2);
+    border: 5px solid var(--color1);
+    border-radius: 10px;
+}
+
+fieldset,
+input {
+    border: 2px solid var(--color4);
+    border-radius: 5px;
+    color: var(--color4);
+    font-weight: bold;
+}
+
+.information-section input {
+    height: 30px;
+}
+
+.information-section,
+.pizza-specs,
+.toopings-crust {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.toopings-crust,
+.pizza-specs {
+    margin-bottom: 10px;
+}
+
+.toopings-crust label,
+.pizza-specs label {
+    margin: 5px;
+
+}
+
+.pizzas-number select{
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    display: block;
+    margin: 10px auto;
+}
